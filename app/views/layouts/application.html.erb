@@ -3,13 +3,14 @@
 <head>
     
 <title>Welp</title>
+
 <%= csrf_meta_tags %>
 <%= csp_meta_tag %>
 
+<%= render 'layouts/bootstrap'%>
+
 <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
 <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-
-<%= render 'layouts/bootstrap'%>
 
 </head>
 <body>
@@ -17,6 +18,9 @@
 <%= render 'layouts/navbar'%>
 
 <div class="container-fluid">
+
+
+<p class="alert"><%= alert %></p>
 
 <%= yield %>
 
